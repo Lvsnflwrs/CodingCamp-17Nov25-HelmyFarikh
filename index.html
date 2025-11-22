@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo">
+            LOGO Revou
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <section class="welcome">
+        <h1>Hi Helmy, Welcome To Website</h1>
+        <p>Ini adalah website untuk mini coding project</p>
+
+        <div class="placeholder-size">
+            <img src="" alt="mungkin diisi poster promo" srcset="">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="hq">
+        <h2>Our Headquarter</h2>
+        <div class="hq-container">
+            <div class="hq-item">
+                <div class="circle"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle"></div>
+                <p>Bandung Barat</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle"></div>
+                <p>Bandung Selatan</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+ <section class="message-us">
+        <h2>Message Us</h2>
+        
+        <table class="main-layout" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="col-left">
+                    <form>
+                        <table class="form-table" border="0">
+                            <tr>
+                                <td class="label-cell">Nama</td>
+                                <td class="separator">:</td>
+                                <td><input type="text" id="nama" placeholder="Nama" class="full-width"></td>
+                            </tr>
+                            <tr>
+                                <td class="label-cell">Tanggal Lahir</td>
+                                <td class="separator">:</td>
+                                <td><input type="date" id = "tanggalLahir" class="full-width"></td>
+                            </tr>
+                            <tr>
+                                <td class="label-cell">Jenis Kelamin</td>
+                                <td class="separator">:</td>
+                                <td>
+                                    <input type="radio" name="gender" id="laki-laki"> <label for="laki">Laki-Laki</label>
+                                    &nbsp;
+                                    <input type="radio" name="gender" id="perempuan"> <label for="perempuan">Perempuan</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-cell" valign="top">Pesan</td>
+                                <td class="separator" valign="top">:</td>
+                                <td><textarea placeholder="Pesan" id = "pesan" class="full-width"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button type="button" class="btn-submit" onclick="submitForm()">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+
+                <td class="col-right" valign="top">
+                    <div class="result-box">
+                        <table class="result-content" border="0">
+                            <tr>
+                                <td width="120"><b>Nama</b></td>
+                                <td>: <span id="outputNama">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Tanggal Lahir</b></td>
+                                <td>: <span id="outputTanggalLahir">-</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Jenis Kelamin</b></td>
+                                <td>: <span id="outputGender">-</span></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Pesan</b></td>
+                                <td valign="top">: <span id="outputPesan">-</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+
 </body>
+
 </html>
